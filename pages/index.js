@@ -9,17 +9,17 @@ const Home = () => {
         <h1 className='bg-red-200 text-5xl mx-auto text-center'>Crawler</h1>
       </div>
       <div>
-        <div className='bg-purple-400 mx-auto flex flex-col items-center h-96 w-3/4	 justify-evenly'>
+        <div className='mx-auto flex flex-col items-center h-96 w-3/4 justify-evenly'>
           <div>
             <form action="/upload" method="post" enctype="multipart/form-data">
               <input type="file" name="files[]" multiple />
-              <input type="submit" value="Clean up XML sitemap" />
+              <button className='bg-sky-500 hover:bg-sky-700'>Clean up XML sitemap</button>
             </form>
           </div>
           <div>
             <form action="/upload" method="post" enctype="multipart/form-data">
               <input type="file" name="files[]" multiple />
-              <input type="submit" value="Consolidate Sitemaps" />
+              <button className='bg-sky-500 hover:bg-sky-700'>Consolidate sitemaps</button>
             </form>
           </div>
           <div>
@@ -29,6 +29,12 @@ const Home = () => {
             </form>
           </div>
         </div>
+      </div>
+      <div>
+      <div class="progress">
+      <div class="progress-bar"></div>
+</div>
+
       </div>
     </div>
   )
