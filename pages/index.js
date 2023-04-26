@@ -82,11 +82,11 @@ const Home = () => {
   }
 
   async function callConsolidate() {
-    const csvData = [];
+    const xmlData = [];
     await Promise.all(
       selectedFiles.map(async (file) => {
         const contents = await readFileAsync(file);
-        csvData.push(contents);
+        xmlData.push(contents);
       })
     );
     const consolidatedXml = await consolidateXml(xmlData);
