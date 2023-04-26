@@ -177,6 +177,116 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <div className="flex items-center justify-center">
+        <svg width="200" height="200">
+          <circle
+            cx="100"
+            cy="100"
+            r="80"
+            fill="#F7DC6F"
+            stroke="#000000"
+            stroke-width="4"
+          />
+          <circle
+            cx="70"
+            cy="70"
+            r="20"
+            fill="#FFFFFF"
+            stroke="#000000"
+            stroke-width="4"
+          />
+          <circle
+            cx="130"
+            cy="70"
+            r="20"
+            fill="#FFFFFF"
+            stroke="#000000"
+            stroke-width="4"
+          />
+          <path
+            d="M 70 120 Q 100 140 130 120"
+            fill="none"
+            stroke="#000000"
+            stroke-width="8"
+          />
+          <path
+            d="M 80 160 Q 100 170 120 160"
+            fill="none"
+            stroke="#000000"
+            stroke-width="8"
+          />
+          <path
+            d="M 60 160 Q 80 180 100 170"
+            fill="none"
+            stroke="#000000"
+            stroke-width="8"
+          />
+          <circle
+            cx="95"
+            cy="85"
+            r="5"
+            fill="#000000"
+            stroke="#000000"
+            stroke-width="2"
+          />
+          <circle
+            cx="105"
+            cy="85"
+            r="5"
+            fill="#000000"
+            stroke="#000000"
+            stroke-width="2"
+          />
+          <path
+            d="M 90 100 Q 100 110 110 100"
+            fill="none"
+            stroke="#000000"
+            stroke-width="4"
+          />
+          <path
+            d="M 110 100 Q 120 110 130 100"
+            fill="none"
+            stroke="#000000"
+            stroke-width="4"
+          />
+          <path
+            d="M 50 120 Q 70 130 70 140"
+            fill="none"
+            stroke="#000000"
+            stroke-width="8"
+          />
+          <path
+            d="M 40 140 Q 60 150 70 160"
+            fill="none"
+            stroke="#000000"
+            stroke-width="8"
+          />
+          <path
+            d="M 30 160 Q 50 170 70 170"
+            fill="none"
+            stroke="#000000"
+            stroke-width="8"
+          />
+          <path
+            d="M 150 120 Q 130 130 130 140"
+            fill="none"
+            stroke="#000000"
+            stroke-width="8"
+          />
+          <path
+            d="M 160 140 Q 140 150 130 160"
+            fill="none"
+            stroke="#000000"
+            stroke-width="8"
+          />
+          <path
+            d="M 170 160 Q 150 170 130 170"
+            fill="none"
+            stroke="#000000"
+            stroke-width="8"
+          />
+        </svg>
+      </div>
       <div></div>
       <div></div>
     </div>
