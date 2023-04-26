@@ -61,35 +61,46 @@ const Home = () => {
   }
 
   return (
-    <div className='bg-amber-100 max-h-full min-h-screen mx-auto'>
-      <div className='container mx-auto place-items-center bg-green-300 h-32 flex items-center'>
-        <h1 className='bg-red-200 text-5xl mx-auto text-center'>Crawler</h1>
+    <div className='max-h-full min-h-screen mx-auto'>
+      <div className='container mx-auto place-items-center h-32 flex items-center'>
+        <h1 className='text-5xl mx-auto text-center'>Crawler</h1>
       </div>
       <div>
         <div className='mx-auto flex flex-col items-center h-96 w-3/4 justify-evenly'>
-          <div>
-            <form action="/upload" method="post" enctype="multipart/form-data">
-              <input type="file" name="files[]" multiple />
-              <button className='bg-sky-500 hover:bg-sky-700'>Clean up XML sitemap</button>
-            </form>
+          <div className='bg-amber-200 flex items-center content-center w-full justify-around'>
+              <input type="file" name="files[]" multiple className='block w-full text-sm text-slate-500
+      file:mr-4 file:py-2 file:px-4
+      file:rounded-full file:border-0
+      file:text-sm file:font-semibold
+      file:bg-violet-50 file:text-violet-700
+      hover:file:bg-violet-100'/>
+              <button className='bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 py-2 px-4 rounded-full text-sm'>Clean up XML sitemap</button>
           </div>
-          <div>
-            <input type="file" multiple onChange={handleFileSelect} />
-            <button onClick={callConsolidate}>Consolidate Sitemaps</button>
+          <div className='bg-amber-200 flex items-center content-center w-full justify-evenly'>
+            <input type="file" multiple onChange={handleFileSelect} className='block w-full text-sm text-slate-500
+      file:mr-4 file:py-2 file:px-4
+      file:rounded-full file:border-0
+      file:text-sm file:font-semibold
+      file:bg-violet-50 file:text-violet-700
+      hover:file:bg-violet-100
+    '/>
+            <button onClick={callConsolidate} className='bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 py-2 px-4 rounded-full text-sm'>Consolidate Sitemaps</button>
           </div>
-          <div>
-            <form action="/upload" method="post" enctype="multipart/form-data">
-              <input type="file" name="files[]" multiple />
-              <input type="submit" value="Push to S3 file" />
-            </form>
+          <div className='bg-amber-200 flex items-center content-center w-full justify-around'>
+              <input type="file" name="files[]" multiple className='block w-full text-sm text-slate-500
+      file:mr-4 file:py-2 file:px-4
+      file:rounded-full file:border-0
+      file:text-sm file:font-semibold
+      file:bg-violet-50 file:text-violet-700
+      hover:file:bg-violet-100
+    '/>
+              <button className='bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 py-2 px-4 rounded-full text-sm	'>Push Sitemap to S3</button>
           </div>
         </div>
       </div>
       <div>
-      <div class="progress">
-      <div class="progress-bar"></div>
-</div>
-
+      </div>
+      <div>
       </div>
     </div>
   )
