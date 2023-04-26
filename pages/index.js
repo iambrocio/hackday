@@ -15,7 +15,7 @@ const Home = () => {
 
   async function consolidateXml(xmlData) {
     const urlElements = [];
-
+  
     await Promise.all(xmlData.map(async (xml) => {
       const parser = new DOMParser();
       const xmlDoc = parser.parseFromString(xml, 'text/xml');
@@ -23,12 +23,12 @@ const Home = () => {
       Array.prototype.forEach.call(urls, url => {
         // Remove xmlns attribute from url tag
         const urlXml = url.outerHTML.replace(/ xmlns="http:\/\/www\.sitemaps\.org\/schemas\/sitemap\/0\.9"/g, '');
-        urlElements.push('\n  ' + urlXml);
+        urlElements.push(`\n\t${urlXml}`);
       });
     }));
-
-    const consolidatedXml = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + urlElements.join('') + '</urlset>';
-
+  
+    const consolidatedXml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${urlElements.join('')}\n</urlset>`;
+  
     return consolidatedXml;
   }
 
