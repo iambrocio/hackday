@@ -114,7 +114,7 @@ const Home = () => {
   return (
     <div className="max-h-full min-h-screen mx-auto">
       <div className="container mx-auto place-items-center h-32 flex items-center">
-        <h1 className="text-5xl mx-auto text-center">Crawler</h1>
+        <h1 className="text-5xl mx-auto text-center">Optimization outlaws</h1>
       </div>
       <div>
         <div className="mx-auto flex flex-col items-center h-96 w-3/4 justify-evenly">
