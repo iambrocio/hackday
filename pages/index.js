@@ -67,16 +67,16 @@ const Home = () => {
       </div>
       <div>
         <div className='mx-auto flex flex-col items-center h-96 w-3/4 justify-evenly'>
-          <div className='bg-amber-200 flex items-center content-center w-full justify-around'>
+          <div className='flex items-center content-center w-7/12 justify-around'>
               <input type="file" name="files[]" multiple className='block w-full text-sm text-slate-500
       file:mr-4 file:py-2 file:px-4
       file:rounded-full file:border-0
       file:text-sm file:font-semibold
       file:bg-violet-50 file:text-violet-700
       hover:file:bg-violet-100'/>
-              <button className='bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 py-2 px-4 rounded-full text-sm'>Clean up XML sitemap</button>
+              <button className='bg-amber-200 hover:bg-yellow-400 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 py-2 px-4 rounded-full text-sm'>Clean up XML sitemap</button>
           </div>
-          <div className='bg-amber-200 flex items-center content-center w-full justify-evenly'>
+          <div className='flex items-center content-center w-7/12 justify-evenly'>
             <input type="file" multiple onChange={handleFileSelect} className='block w-full text-sm text-slate-500
       file:mr-4 file:py-2 file:px-4
       file:rounded-full file:border-0
@@ -84,9 +84,9 @@ const Home = () => {
       file:bg-violet-50 file:text-violet-700
       hover:file:bg-violet-100
     '/>
-            <button onClick={callConsolidate} className='bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 py-2 px-4 rounded-full text-sm'>Consolidate Sitemaps</button>
+            <button onClick={callConsolidate} className='bg-amber-200 hover:bg-yellow-400 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 py-2 px-4 rounded-full text-sm'>Consolidate Sitemaps</button>
           </div>
-          <div className='bg-amber-200 flex items-center content-center w-full justify-around'>
+          <div className='flex items-center content-center w-7/12 justify-around'>
               <input type="file" name="files[]" multiple className='block w-full text-sm text-slate-500
       file:mr-4 file:py-2 file:px-4
       file:rounded-full file:border-0
@@ -94,7 +94,7 @@ const Home = () => {
       file:bg-violet-50 file:text-violet-700
       hover:file:bg-violet-100
     '/>
-              <button className='bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 py-2 px-4 rounded-full text-sm	'>Push Sitemap to S3</button>
+              <button className='bg-amber-200	 hover:bg-yellow-400 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 py-2 px-4 rounded-full text-sm	'>Push Sitemap to S3</button>
           </div>
         </div>
       </div>
